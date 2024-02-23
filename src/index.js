@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+// import App from "./App";
+// import RealTime from "./components/RealTime";
+// import ArraysDestucturing from "./components/ArraysDestucturing";
+// import cars from "./data";
+import EventHandling from "./components/EventHandling";
+import ComplexState from "./components/ComplexStates";
+import FormChallenge from "./components/NewFormChallenge";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// const [tesla, honda] = cars;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <table>
+//     <tr>
+//       <th>Brand</th>
+//       <th>Top Speed</th>
+//       <th>Color</th>
+//     </tr>
+//     <tr>
+//       <td>{tesla.model}</td>
+//       <td>{tesla.coloursByPopularity}</td>
+//       <td>{tesla.speedStats.topSpeed}</td>
+//     </tr>
+//     <tr>
+//       <td>{honda.model}</td>
+//       <td>{honda.speedStats.topSpeed}</td>
+//       <td>{honda.coloursByPopularity}</td>
+//     </tr>
+//   </table>
+// );
+//root.render(<EventHandling />);
+
+//root.render(<ComplexState />);
+root.render(<FormChallenge />);
